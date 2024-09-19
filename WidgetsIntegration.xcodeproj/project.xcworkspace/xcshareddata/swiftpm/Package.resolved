@@ -1,0 +1,15 @@
+{
+  "originHash" : "0a81721b7bb6a11bf8e9e23d00aa362267fdad3d89ad0b00fcf0ec318135ab9f",
+  "pins" : [
+    {
+      "identity" : "ios-sdk-widgets",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/salemove/ios-sdk-widgets",
+      "state" : {
+        "revision" : "9ee75e835f58ce5cbe38879a418f63255284aa87",
+        "version" : "2.7.1"
+      }
+    }
+  ],
+  "version" : 3
+}

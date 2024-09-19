@@ -8,17 +8,33 @@
 
 /* Begin PBXBuildFile section */
 		215A25622C9485EA0013023E /* WidgetsIntegrationApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 215A25612C9485EA0013023E /* WidgetsIntegrationApp.swift */; };
-		215A25642C9485EA0013023E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 215A25632C9485EA0013023E /* ContentView.swift */; };
+		215A25642C9485EA0013023E /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 215A25632C9485EA0013023E /* MainView.swift */; };
 		215A25662C9485EB0013023E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 215A25652C9485EB0013023E /* Assets.xcassets */; };
 		215A25692C9485EB0013023E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 215A25682C9485EB0013023E /* Preview Assets.xcassets */; };
+		215A25712C94861A0013023E /* GliaWidgets in Frameworks */ = {isa = PBXBuildFile; productRef = 215A25702C94861A0013023E /* GliaWidgets */; };
+		215A25732C94861A0013023E /* GliaWidgetsXcf in Frameworks */ = {isa = PBXBuildFile; productRef = 215A25722C94861A0013023E /* GliaWidgetsXcf */; };
+		215A25752C94872E0013023E /* MainInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 215A25742C94872E0013023E /* MainInteractor.swift */; };
+		215A25772C94875C0013023E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 215A25762C94875C0013023E /* AppDelegate.swift */; };
+		215A25792C9982B20013023E /* EngagementsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 215A25782C9982B20013023E /* EngagementsService.swift */; };
+		215A257E2C999BA20013023E /* AuthenticationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 215A257D2C999BA20013023E /* AuthenticationService.swift */; };
+		215A25802C9AE7650013023E /* Credentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = 215A257F2C9AE7650013023E /* Credentials.swift */; };
+		215A25842C9BFEC40013023E /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 215A25832C9BFEC40013023E /* Color+Extension.swift */; };
+		215A25862C9C12DE0013023E /* GliaCredentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = 215A25852C9C12DE0013023E /* GliaCredentials.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		215A255E2C9485EA0013023E /* WidgetsIntegration.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WidgetsIntegration.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		215A25612C9485EA0013023E /* WidgetsIntegrationApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetsIntegrationApp.swift; sourceTree = "<group>"; };
-		215A25632C9485EA0013023E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		215A25632C9485EA0013023E /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		215A25652C9485EB0013023E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		215A25682C9485EB0013023E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		215A25742C94872E0013023E /* MainInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainInteractor.swift; sourceTree = "<group>"; };
+		215A25762C94875C0013023E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		215A25782C9982B20013023E /* EngagementsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EngagementsService.swift; sourceTree = "<group>"; };
+		215A257D2C999BA20013023E /* AuthenticationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationService.swift; sourceTree = "<group>"; };
+		215A257F2C9AE7650013023E /* Credentials.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Credentials.swift; sourceTree = "<group>"; };
+		215A25832C9BFEC40013023E /* Color+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
+		215A25852C9C12DE0013023E /* GliaCredentials.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GliaCredentials.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +42,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				215A25712C94861A0013023E /* GliaWidgets in Frameworks */,
+				215A25732C94861A0013023E /* GliaWidgetsXcf in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,8 +69,13 @@
 		215A25602C9485EA0013023E /* WidgetsIntegration */ = {
 			isa = PBXGroup;
 			children = (
+				215A25822C9BF2A00013023E /* UI */,
+				215A25812C9BF28F0013023E /* Services */,
 				215A25612C9485EA0013023E /* WidgetsIntegrationApp.swift */,
-				215A25632C9485EA0013023E /* ContentView.swift */,
+				215A25762C94875C0013023E /* AppDelegate.swift */,
+				215A257F2C9AE7650013023E /* Credentials.swift */,
+				215A25852C9C12DE0013023E /* GliaCredentials.swift */,
+				215A25832C9BFEC40013023E /* Color+Extension.swift */,
 				215A25652C9485EB0013023E /* Assets.xcassets */,
 				215A25672C9485EB0013023E /* Preview Content */,
 			);
@@ -65,6 +88,24 @@
 				215A25682C9485EB0013023E /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		215A25812C9BF28F0013023E /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				215A25782C9982B20013023E /* EngagementsService.swift */,
+				215A257D2C999BA20013023E /* AuthenticationService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		215A25822C9BF2A00013023E /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				215A25632C9485EA0013023E /* MainView.swift */,
+				215A25742C94872E0013023E /* MainInteractor.swift */,
+			);
+			path = UI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +124,10 @@
 			dependencies = (
 			);
 			name = WidgetsIntegration;
+			packageProductDependencies = (
+				215A25702C94861A0013023E /* GliaWidgets */,
+				215A25722C94861A0013023E /* GliaWidgetsXcf */,
+			);
 			productName = WidgetsIntegration;
 			productReference = 215A255E2C9485EA0013023E /* WidgetsIntegration.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +156,9 @@
 				Base,
 			);
 			mainGroup = 215A25552C9485EA0013023E;
+			packageReferences = (
+				215A256F2C94861A0013023E /* XCRemoteSwiftPackageReference "ios-sdk-widgets" */,
+			);
 			productRefGroup = 215A255F2C9485EA0013023E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -137,8 +185,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				215A25642C9485EA0013023E /* ContentView.swift in Sources */,
+				215A25792C9982B20013023E /* EngagementsService.swift in Sources */,
+				215A25862C9C12DE0013023E /* GliaCredentials.swift in Sources */,
+				215A25842C9BFEC40013023E /* Color+Extension.swift in Sources */,
+				215A25772C94875C0013023E /* AppDelegate.swift in Sources */,
+				215A25642C9485EA0013023E /* MainView.swift in Sources */,
+				215A25802C9AE7650013023E /* Credentials.swift in Sources */,
 				215A25622C9485EA0013023E /* WidgetsIntegrationApp.swift in Sources */,
+				215A25752C94872E0013023E /* MainInteractor.swift in Sources */,
+				215A257E2C999BA20013023E /* AuthenticationService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,6 +330,9 @@
 				DEVELOPMENT_TEAM = Z8YT8A2XZ2;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Camera Usage Description";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Microphone Usage Description";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "Photo Library Additions Usage Description";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -304,6 +362,9 @@
 				DEVELOPMENT_TEAM = Z8YT8A2XZ2;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Camera Usage Description";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Microphone Usage Description";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "Photo Library Additions Usage Description";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -344,6 +405,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		215A256F2C94861A0013023E /* XCRemoteSwiftPackageReference "ios-sdk-widgets" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/salemove/ios-sdk-widgets";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.7.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		215A25702C94861A0013023E /* GliaWidgets */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 215A256F2C94861A0013023E /* XCRemoteSwiftPackageReference "ios-sdk-widgets" */;
+			productName = GliaWidgets;
+		};
+		215A25722C94861A0013023E /* GliaWidgetsXcf */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 215A256F2C94861A0013023E /* XCRemoteSwiftPackageReference "ios-sdk-widgets" */;
+			productName = GliaWidgetsXcf;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 215A25562C9485EA0013023E /* Project object */;
 }
